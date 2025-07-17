@@ -1,2 +1,2 @@
-# Practise_Coding_Projects
-Practise project building a lending library using OOP, utilising SQLAlchemy and PostgreSQL
+# Python Lending Library Project
+Practise Python project building a book lending library using OOP, utilising SQLAlchemy and PostgreSQL
