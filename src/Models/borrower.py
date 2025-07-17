@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
-from .base import Base
+from src.base import Base
 
 
 class Borrower(Base):

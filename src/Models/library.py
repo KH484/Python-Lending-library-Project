@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
-from .base import Base
+from src.base import Base
 
 
 class Library(Base):
@@ -9,3 +9,9 @@ class Library(Base):
     name = Column(String)
     address = Column(String)
 
+# add the method to add a book to the library using the new foreign key references
+# add a method to remove a book from the library
+
+# as an example of how to reference a foreign key etc.
+#     def total_loan_amount(self):
+#         return sum(loan.amount for loan in self.loans)

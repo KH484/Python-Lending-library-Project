@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
-from .base import Base
+from src.base import Base
 
 class Book(Base):
     __tablename__ = "books"
@@ -10,8 +10,7 @@ class Book(Base):
     genre = Column(String)
     fiction = Column(Boolean)
     title = Column(String)
-    library = Column(String, ForeignKey('libraries.name'))
-
+    library = Column(Integer, ForeignKey('libraries.id'))
     libraries = relationship('Library', backref='books')
 
     def __str__(self):
